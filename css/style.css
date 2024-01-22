@@ -1,0 +1,511 @@
+:root {
+  --fs-xl: 5vw;
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+}
+
+* {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("../img/sacz.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 20vw;
+  padding-bottom: 21vw;
+  color: white;
+  text-align: right;
+  padding-right: 10vw;
+  line-height: 1em;
+  max-width: 100%;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: var(--fs-xl);
+}
+
+.header__description {
+  font-size: var(--fs-600);
+  line-height: 1.4em;
+}
+
+.main:not(.video-container) {
+  margin-left: calc(5% + 2em);
+  margin-right: calc(5% + 2em);
+  padding-bottom: 5em;
+}
+
+.title-container {
+  position: absolute;
+  bottom: -9%;
+  right: 9vw;
+  left: 9vw;
+  background-color: white;
+  line-height: 0.1em;
+}
+
+.title__category {
+  font-weight: normal;
+}
+
+.title {
+  margin: auto;
+  width: 45vw;
+  padding-bottom: 1em;
+  border-bottom: 0.1rem solid black;
+  text-align: center;
+  background-color: white;
+  letter-spacing: 0.1em;
+}
+
+.author {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin: auto;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  background-color: white;
+  letter-spacing: 0.125em;
+  font-style: italic;
+}
+
+.author__image {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.intro {
+  padding-top: 5em;
+  padding-bottom: 5em;
+  display: flex;
+  gap: 5vw;
+}
+
+.image-intro {
+  text-align: center;
+}
+
+.image-intro__image {
+  width: 31.25em;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-intro {
+  margin-top: 6vw;
+  letter-spacing: 0.05em;
+  width: 50vw;
+}
+
+.article {
+  margin: auto;
+  padding-left: 6.5vw;
+  padding-right: 6.5vw;
+  line-height: 2em;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 105vh;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discovery {
+  margin: auto;
+  width: 60vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  max-width: 100%;
+}
+
+.discovery__title {
+  display: flex;
+  align-items: start;
+}
+
+.discovery__title-image {
+  width: 1.875rem;
+  height: 1.875rem;
+  padding-top: 0.8em;
+  padding-right: 1em;
+  margin-right: 0.625rem;
+}
+
+.discovery__image {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  justify-content: center;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container__image {
+  width: calc((80vw - 3.75rem) / 3);
+  height: calc((80vw - 3.75rem) / 3);
+  object-fit: cover;
+}
+
+.image-container p {
+  margin-top: 0.625rem;
+}
+
+.image-container:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.footer {
+  background-image: url("../img/dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 18vw;
+  padding-bottom: 19vw;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer__title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.footer__description {
+  margin-bottom: 2em;
+}
+
+.email-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 40em;
+  width: 100%;
+}
+
+.input-group__input {
+  flex: 1;
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  font-size: 1.25rem;
+  line-height: 1;
+  outline: none;
+  color: white;
+}
+
+.input-group__input::placeholder {
+  color: white;
+}
+
+.input-group__button {
+  width: 8em;
+  padding: 0.5em;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-left: 3em;
+}
+
+.input-group__button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.logo-container {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.logo-container__image {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 1900px) {
+  .title-container {
+    position: static;
+    background-color: white;
+    line-height: 0.1em;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --fs-xl: 5vw;
+    --fs-600: 1.0rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-200: 0.85rem;
+  }
+
+  .header {
+    background-image: url("../img/sacz.jpg");
+    padding-top: 20vw;
+    padding-bottom: 21vw;
+    color: white;
+    text-align: right;
+    padding-right: 10vw;
+    line-height: 1em;
+    max-width: 100%;
+  }
+
+  .header__title {
+    font-weight: bold;
+    font-size: var(--fs-xl);
+  }
+
+  .header__description {
+    font-size: var(--fs-600);
+    line-height: 1.4em;
+  }
+
+  .title {
+    margin: auto;
+    width: 80vw;
+    padding-bottom: 1em;
+    border-bottom: 0.1rem solid black;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 0.1em;
+  }
+
+  .main:not(.video-container) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 5em;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-intro img {
+    width: 43em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-intro {
+    letter-spacing: 0.05em;
+    width: 90%;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .discovery {
+    padding: 2em;
+  }
+
+  .discovery__title {
+    display: flex;
+    align-items: start;
+  }
+
+  .discovery__title-image {
+    width: 1.875rem;
+    height: 1.875rem;
+    padding-top: 0.8em;
+    padding-right: 1em;
+    margin-right: 0.625rem;
+  }
+
+  .discovery__image {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    text-align: center;
+    margin-left: 0.625rem;
+  }
+
+  .image-container__image {
+    width: calc((80em - 3.75rem) / 3);
+    height: calc((80em - 3.75rem) / 3);
+    object-fit: cover;
+  }
+
+  .image-container p {
+    margin-top: 0.625rem;
+  }
+
+  .image-container:not(:last-child) {
+    margin-right: 1.25rem;
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    --fs-xl: 5vw;
+    --fs-600: 1.0rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-200: 0.85rem;
+  }
+
+  .header {
+    background-image: url("../img/sacz.jpg");
+    padding-top: 200vw;
+    padding-bottom: 70vw;
+    color: white;
+    text-align: right;
+  }
+
+  .header__title {
+    font-weight: bold;
+    font-size: var(--fs-xl);
+  }
+
+  .header__description {
+    font-size: var(--fs-600);
+    line-height: 1.4em;
+  }
+
+  .title {
+    margin: auto;
+    width: 80vw;
+    padding-bottom: 1em;
+    border-bottom: 0.1rem solid black;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 0.1em;
+  }
+
+  .main:not(.video-container) {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 5em;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-intro img {
+    width: 43em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-intro {
+    letter-spacing: 0.05em;
+    width: 90%;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .discovery {
+    padding: 2em;
+  }
+
+  .discovery__title {
+    display: flex;
+    align-items: start;
+  }
+
+  .discovery__title-image {
+    width: 1.875rem;
+    height: 1.875rem;
+    padding-top: 0.8em;
+    padding-right: 1em;
+    margin-right: 0.625rem;
+  }
+
+  .discovery__image {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    justify-content: center;
+  }
+
+  .image-container {
+    text-align: center;
+    margin-left: 0.625rem;
+  }
+
+  .image-container__image {
+    width: calc((80vw - 3.75rem) / 3);
+    height: calc((80vw - 3.75rem) / 3);
+    object-fit: cover;
+  }
+
+  .image-container p {
+    margin-top: 0.625rem;
+  }
+
+  .image-container:not(:last-child) {
+    margin-right: 1.25rem;
+  }
+}
+
